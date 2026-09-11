@@ -32,10 +32,7 @@ services:
       retries: 10
 
   evolution-api:
-    build:
-      context: ..
-      dockerfile: Dockerfile
-    image: evolution-fix-463:local
+    image: ghcr.io/meublow/evolution-api:build-fix-463
     container_name: evolution-api
     restart: unless-stopped
     ports:

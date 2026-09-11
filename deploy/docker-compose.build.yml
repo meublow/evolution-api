@@ -1,0 +1,7 @@
+# Override para buildar a imagem localmente em vez de baixar do GHCR.
+#   docker compose -f docker-compose.yml -f docker-compose.build.yml up -d --build
+services:
+  evolution-api:
+    build:
+      context: ..
+      dockerfile: Dockerfile
